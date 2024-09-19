@@ -1,0 +1,338 @@
+/* .home {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+}
+@media (max-width: 600px) {
+  .home {
+    width: 100%;
+    height: 200px;  
+    max-width: none; 
+    border-radius: 0; 
+  }
+} */
+
+html, body{
+  margin: 0;
+  padding: 0;
+  background-color: WHITE;
+}
+.home{
+    position: relative;
+}
+*{
+  font-family: "Poppins", sans-serif;
+}
+
+#nav{
+  background-image: linear-gradient(to right, #48A0FE, #2B6098);
+  width: 100vw;
+  position: relative;
+  top: 40px;
+}
+
+.chat-assist{
+    position: fixed; /* Ensures the ChatBot stays fixed */
+  bottom: 20px;    /* Adjusts the distance from the bottom */
+  right: 20px;     /* Adjusts the distance from the right side */
+  z-index: 1000;   /* Makes sure it's on top of other elements */
+  width: 400px;    /* Define the width of the ChatBot */
+ /* Define the height of the ChatBot */
+  background-color: white; /* Background color for the chat window */
+  border-radius: 20px;      /* Rounded corners */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Slight shadow for elevation */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.chat-button1 {
+  position: fixed;          /* Fixes it to the bottom-right corner */
+  top: 20px;             /* Adjusts distance from the bottom */
+  left: 20px;              /* Adjusts distance from the right */
+  width: 80px;              /* Button size (width and height) */
+  height: 40px;
+  background-color: #0A3255; /* Background color of the button */
+  border-radius: 10%;       /* Makes the button circular */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds shadow for elevation */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;             /* Icon or text color */
+  font-size: 18px;          /* Adjust the size of the icon/text */
+  cursor: pointer;          /* Changes cursor to pointer on hover */
+  z-index: 1000;            /* Ensures it stays on top */
+  border: none;             /* Removes default button border */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.chat-button1:hover {
+  background-color: #48A0FE; /* Change button color on hover */
+  transform: scale(1.1);      /* Slight zoom effect on hover */
+}
+
+.search{
+  background-color: #ECE6F0;
+  width: 100%;
+  height: 3vw;
+  border-radius: 25px;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mi{
+  color : white;
+}
+
+.searchbar{
+    width: 80%;
+    border: 0;
+    height: 60%;
+
+}
+
+#right{
+  margin-right: 2vw;
+}
+
+#right div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.agrp{
+  width: 30%;
+
+}
+
+.agrp a{
+  color: white;
+  text-decoration: none;
+}
+
+.bgrp{
+  width: 30%;
+  margin-left: 4vw;
+}
+
+
+.bgrp .reg{
+    background-color: white;
+    -webkit-appearance: none;
+    border: 0px;
+    padding: 0.4vw 1.5vw;
+    border-radius: 15px;
+}
+
+
+.bgrp .log{
+  background-color: transparent;
+  -webkit-appearance: none;
+  border: 1px solid white; 
+  color: white;
+  display: flex;
+  margin-left: 15px;
+  padding: 0.4vw 1.5vw;
+  border-radius: 15px;
+
+}
+
+#Hsection1{
+  height: 80%;
+  width: 100%;
+}
+
+#Hsection1 .h2{
+  color: #0C3457;
+  margin-left: 5vw;
+  margin-top: 6vw;
+}
+
+#Hsection1 img{
+  position: absolute;
+  top: 300px;
+  right: 0px;
+  z-index: 1;
+  height: 60%;
+  width: 60vw;
+}
+
+#Hsection1 h5{
+  margin-left: 11.5vw;
+  margin-top: 2vw;
+  color: #235784;
+}
+
+.list{
+  margin-left: 11.2vw;
+  margin-top: 1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.list .li{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #235784;
+}
+
+.chatn{
+  padding: 0.5vw 1.5vw;
+  display: flex;
+  align-items: center;
+  -webkit-appearance: none;
+  border: none;
+  background-color: #0A3255;
+  color: white;
+  margin-left: 11vw;
+  gap: 5px;
+  margin-top: 2vw;
+  border-radius: 25px;
+}
+
+#Features{
+  height: 100px;
+  width: 100%;
+  position: relative;
+  top: 150px;
+  text-align: center;
+  
+}
+
+#Features .h2{
+  background: linear-gradient(to right, #0B3356, #156EBB);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.fcards{
+  display: flex;
+  height: 80%;
+  justify-content: space-evenly;
+  margin-top: 17%;
+
+}
+
+.fcard{
+  background-color: #0a3255;
+  color: white;
+  width: 16%;
+  height: 500%;
+  display: flex;
+  transform: scale(1.2);
+  flex-direction: column;
+  align-items: center;
+}
+
+.fcard .fimg{
+  width: 75%;
+  position: relative;
+  top: -80px;
+}
+
+.fcard .fc{
+  width: 75%;
+  margin-top: -2vw;
+}
+
+.fcards > .fcard:nth-child(even){
+    margin-top: -4vw;
+}
+
+
+#experts{
+  background-image: linear-gradient(to bottom, #48A0FE, #0A3255);
+  width: 95.8%;
+  position: absolute;
+  top: 1500px;
+  border-radius: 40px;
+  text-align: center;
+  padding: 2%;
+  margin-top: 5%;
+}
+
+#experts .secH{
+    font-size: 3.5rem;
+  background: linear-gradient(to right, #0B3356, #156EBB);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#experts .mainH{
+  color: #0A3255;
+
+}
+
+#experts .mainH span{
+  color: #BFDDE1;
+}
+
+#experts .ecards{
+  display: flex;
+
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 4%;
+}
+
+#experts .ecard{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 55%;
+  transition: 0.5s ease-in-out;
+  opacity: 0.7;
+}
+
+#experts .ecard:hover{
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+#experts .Eimg{
+  height: 13vw;
+  border-radius: 50%;
+}
+
+#experts .Ename{
+  color: #0A3255;
+  margin-top: 1vw;
+}
+
+#experts .Epos{
+  transform: scale(1.1);
+}
+
+#experts .Econtent{
+  width: 45%;
+  color: white;
+}
+
+#experts .chatn{
+  padding: 0.5vw 1.5vw;
+  display: flex;
+  align-items: center;
+  -webkit-appearance: none;
+  border: none;
+  background-color: #0A3255;
+  color: white;
+  gap: 5px;
+  margin: 0px;
+  margin-top: 2vw;
+  border-radius: 25px;
+}
+
+.ecards > .ecard:nth-child(even){
+  margin-top: -2vw;
+  
+}
+

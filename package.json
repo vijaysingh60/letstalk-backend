@@ -1,0 +1,26 @@
+{
+  "name": "nlp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon backend/index.js",
+    "build":"npm install && npm install --prefix chat && npm run build --prefix chat"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/style": "^0.8.0",
+    "@mui/material": "^6.0.2",
+    "@mui/styled-engine-sc": "^6.0.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "node-nlp": "^4.27.0",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5",
+    "styled-components": "^6.1.13"
+  }
+}
