@@ -4,7 +4,7 @@ import './chat.css'
 import { Link } from 'react-router-dom';
 
 // Connect to the backend (ensure the URL is correct)
-const socket = io('http://192.168.217.22:3000'); // Change to your server's URL
+const socket = io('https://letstalk-backend-1.onrender.com'); // Change to your server's URL
 
 const Chat = () => {
     const [message, setMessage] = useState(''); // Store the current message
